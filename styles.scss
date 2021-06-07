@@ -1,0 +1,17 @@
+@import "colors";
+
+h1 {
+  color: $primary-color;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 500px;
+}
+
+.cell {
+  border: 1px solid black;
+  box-sizing: border-box;
+}

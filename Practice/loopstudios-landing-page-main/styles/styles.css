@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero {
+  height: 650px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4))), url("../images/desktop/image-hero.jpg") no-repeat center;
+  background: linear-gradient(0deg rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 60px 0 150px;
+}
+
+.hero header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Alata", sans-serif;
+  font-weight: 400px;
+}
+
+.hero header ul li:not(last-child) {
+  margin-right: 24px;
+}
+
+.hero h1 {
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 300px;
+  font-size: 60px;
+  padding: 25px 40px;
+  border: 2px solid white;
+  width: 60%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */

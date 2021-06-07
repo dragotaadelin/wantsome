@@ -1,15 +1,20 @@
 h1 {
-  color: lightskyblue;
+  color: red;
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   height: 500px;
 }
 
 .cell {
   border: 1px solid black;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+/*# sourceMappingURL=styles.css.map */

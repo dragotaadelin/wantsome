@@ -251,6 +251,10 @@ footer .container ul li {
   margin-right: 10px;
 }
 
+footer .container:nth-child(2) {
+  margin-top: 10px;
+}
+
 footer .container:nth-child(2) li {
   margin-right: 20px;
 }

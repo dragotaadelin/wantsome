@@ -1,0 +1,31 @@
+.hero h1 {
+  font-size: 60px;
+  padding: 25px 40px;
+  width: 60%;
+  margin: 0;
+}
+
+.interactive.container img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.interactive.container .text {
+  padding-top: 60px;
+  padding-left: 60px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+}
+
+.interactive.container .text h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.interactive.container .text p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=small-desktop.css.map */

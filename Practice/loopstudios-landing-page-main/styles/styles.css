@@ -14,16 +14,14 @@ ul {
 }
 
 .container {
-  width: 1020px;
-  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .hero {
-  height: 650px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4))), url("../images/desktop/image-hero.jpg") no-repeat center;
-  background: linear-gradient(0deg rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") no-repeat center;
+  background: url("../images/mobile/image-hero.jpg") no-repeat center;
   background-size: cover;
-  color: white;
+  height: 950px;
+  color: #fff;
   padding: 60px 0 150px;
 }
 
@@ -39,7 +37,11 @@ ul {
           justify-content: space-between;
 }
 
-.hero header ul {
+.hero header nav {
+  display: none;
+}
+
+.hero header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,85 +49,142 @@ ul {
   font-weight: 400;
 }
 
-.hero header ul li:not(last-child) {
+.hero header nav ul li:not(:last-child) {
   margin-right: 24px;
 }
 
 .hero h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josephin Sans", sans-serif;
   font-weight: 300;
-  font-size: 60px;
-  padding: 25px 40px;
-  border: 2px solid white;
-  width: 60%;
+  font-size: 54px;
+  padding: 30px;
+  border: 1px solid #fff;
   text-transform: uppercase;
-  margin: 0;
+  margin: 60% 0 0;
 }
 
-.hero .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-}
-
-.interactive {
+.interactive.container {
   margin: 150px auto;
   position: relative;
 }
 
-.interactive .text {
-  padding-top: 60px;
-  padding-left: 60px;
+.interactive.container img {
+  max-width: 100%;
+  display: block;
+}
+
+.interactive.container .text {
   background-color: white;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  text-align: center;
 }
 
-.interactive h1 {
-  font-family: "Josefin Sans", sans-serif;
+.interactive.container .text h1 {
+  font-family: "Josephin Sans", sans-serif;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin: 0, 0, 24px;
+  margin: 24px 0;
 }
 
-.interactive p {
+.interactive.container .text p {
+  font-size: 20px;
   color: #8c8c8c;
-  font-size: 15px;
   font-family: "Alata", sans-serif;
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .our-creations header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 75px;
 }
 
-.our-creations h1 {
-  font-family: "Josefin Sans", sans-serif;
+.our-creations header h1 {
+  font-family: "Josephin Sans", sans-serif;
   font-weight: 300;
   font-size: 48px;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
+}
+
+.our-creations header button {
+  display: none;
+}
+
+.our-creations article {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+.our-creations article:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.our-creations article h2 {
+  margin: 0;
+  text-transform: uppercase;
+  width: 65%;
+  font-family: "Josephin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.our-creations article:nth-child(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-deep-earth.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-deep-earth.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-night-arcade.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-night-arcade.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(3) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-soccer-team.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-soccer-team.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(4) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-grid.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-grid.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(5) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-from-above.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-from-above.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(6) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-pocket-borealis.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-pocket-borealis.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(7) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-curiosity.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-curiosity.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations article:nth-child(8) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-fisheye.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-fisheye.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .our-creations button {
@@ -143,123 +202,56 @@ ul {
   cursor: pointer;
 }
 
-.our-creations .creations {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+.our-creations .button-wrapper {
+  text-align: center;
 }
 
-.our-creations article {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  padding: 30px;
-}
-
-.our-creations article h2 {
-  text-transform: uppercase;
-  margin: 0;
-  width: 65%;
-}
-
-.our-creations article:nth-child(1) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-deep-earth.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-deep-earth.jpg");
-}
-
-.our-creations article:nth-child(2) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-night-arcade.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-night-arcade.jpg");
-}
-
-.our-creations article:nth-child(3) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-soccer-team.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-soccer-team.jpg");
-}
-
-.our-creations article:nth-child(4) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-grid.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-grid.jpg");
-}
-
-.our-creations article:nth-child(5) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-from-above.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-from-above.jpg");
-}
-
-.our-creations article:nth-child(6) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-pocket-borealis.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-pocket-borealis.jpg");
-}
-
-.our-creations article:nth-child(7) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-curiosity.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-curiosity.jpg");
-}
-
-.our-creations article:nth-child(8) {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-fisheye.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-fisheye.jpg");
+.our-creations .button-wrapper > button {
+  font-size: 24px;
+  padding: 10px 30px;
+  margin-top: 30px;
 }
 
 footer {
   background-color: black;
-  color: white;
   margin-top: 150px;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding: 40px 0;
+  text-align: center;
 }
 
-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+footer nav ul {
+  margin-top: 24px;
+}
+
+footer ul {
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  color: white;
 }
 
-footer .container ul {
+footer .nav-and-logo ul li:not(:first-child) {
+  margin-top: 24px;
+}
+
+footer .social-and-copyright ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 32px;
 }
 
-footer .container ul li {
-  margin-right: 10px;
+footer .social-and-copyright ul li:not(:last-child) {
+  margin-right: 24px;
 }
 
-footer .container:nth-child(2) {
-  margin-top: 10px;
-}
-
-footer .container:nth-child(2) li {
-  margin-right: 20px;
-}
-
-footer .container:nth-child(2) p {
+footer .social-and-copyright p {
+  margin: 0;
+  font-size: 15px;
   color: #8c8c8c;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */

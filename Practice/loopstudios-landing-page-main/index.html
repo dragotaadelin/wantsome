@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
@@ -14,25 +16,36 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link
+      href="styles/tablet.css"
+      media="screen and (min-width: 768px)"
+      rel="stylesheet"
+    />
+    <link
+      href="styles/small-desktop.css"
+      media="screen and (min-width: 992px)"
+      rel="stylesheet"
+    />
+    <link
+      href="styles/large-desktop.css"
+      media="screen and (min-width: 1200px)"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Loopstudios landing page</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <section class="hero">
       <div class="container">
         <header>
           <img src="./images/logo.svg" alt="Loopstudios logo" />
+
+          <img
+            class="toggle-menu"
+            src="images/icon-hamburger.svg"
+            alt="Toggle menu"
+          />
 
           <nav>
             <ul>
@@ -44,15 +57,13 @@
             </ul>
           </nav>
         </header>
+
         <h1>Immersive experiences that deliver</h1>
       </div>
     </section>
 
     <section class="interactive container">
-      <img
-        src="./images/desktop/image-interactive.jpg"
-        alt="interactive VR photo"
-      />
+      <img src="images/desktop/image-interactive.jpg" alt="Interactive VR" />
 
       <div class="text">
         <h1>The leader in interactive VR</h1>
@@ -97,35 +108,45 @@
           <h2>Make it fisheye</h2>
         </article>
       </div>
+
+      <div class="button-wrapper">
+        <button>See all</button>
+      </div>
     </section>
 
     <footer>
-      <nav class="container">
-        <img src="./images/logo.svg" alt="logo" />
-        <ul>
-          <li><img src="./images/./icon-facebook.svg" alt="fb" /></li>
-          <li><img src="./images/icon-twitter.svg" alt="tw" /></li>
-          <li><img src="./images/icon-pinterest.svg" alt="tw" /></li>
-          <li><img src="./images/icon-instagram.svg" alt="tw" /></li>
-        </ul>
-      </nav>
-      <nav class="container">
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
-        <p>© 2021 Loopstudios. All rights reserved.</p>
-      </nav>
-    </footer>
+      <div class="container">
+        <div class="nav-and-logo">
+          <img src="./images/logo.svg" alt="Loopstudios logo" />
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+          <nav>
+            <ul>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Events</li>
+              <li>Products</li>
+              <li>Support</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-and-copyright">
+          <ul>
+            <li>
+              <img src="images/icon-facebook.svg" alt="Facebook logo" />
+            </li>
+            <li>
+              <img src="images/icon-twitter.svg" alt="Twitter logo" />
+            </li>
+            <li>
+              <img src="images/icon-pinterest.svg" alt="Pinterest logo" />
+            </li>
+            <li>
+              <img src="images/icon-instagram.svg" alt="Instagram logo" />
+            </li>
+          </ul>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
